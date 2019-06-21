@@ -1,0 +1,595 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: 'PT Sans', sans-serif;
+	text-transform: uppercase;
+
+	background-color: #f2f2f2;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.body {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+
+	-webkit-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.75);
+	box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.75);
+}
+/* Header */
+
+.header {
+	max-width: 1200px;
+	min-height: 56px;
+
+	background-color: #ffffff;
+}
+
+.navigation {
+
+}
+
+.navigation-list {
+	list-style: none;
+
+	padding: 0;
+	margin: 0;
+
+	display: flex;
+	justify-content: space-around;
+}
+
+.navigation-list li {
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+.navigation-list a {
+  font-size: 14px;
+ 	font-weight: 700;
+	line-height: 26px;
+}
+
+.navigation-list a:hover {
+	color: #81b3d2;
+}
+
+.navigation-list a:active {
+	color: #cacaca;
+}
+
+.navigation-list img {
+	position: absolute;
+	top: 0;
+
+	margin-left: auto;
+	margin-right: auto;
+	margin-left: -70px;
+}
+
+/* Intro */
+
+.intro {
+	min-height: 724px;
+
+	background-image: url("img/background1.png");
+	background-size: cover;
+	background-position: center center;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+
+	padding-bottom: 55px;
+
+	text-align: center;
+}
+
+.intro h1 {
+	margin: 0;
+	margin-bottom: 30px;
+
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.intro p {
+	margin: 0;
+
+	font-size: 14px;
+	line-height: 26px;
+}
+
+/* First Reason (Настоящий городок) */
+
+.reason1 {
+	display: flex;
+
+	background-image: url("img/background2.png");
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+.reason-container {
+	min-height: 256px;
+	flex-basis: 400px;
+
+	text-align: center;
+
+	background-color: #81b3d2;
+	color: white;	
+}
+
+.reason-container h2 {
+	margin: 0;
+	margin-top: 45px;
+	margin-bottom: 28px;
+
+	font-size: 21px;
+	line-height: 21px;
+}
+
+.reason-container p {
+	margin: 0;
+	margin-bottom: 28px;
+
+	font-size: 14px;
+	line-height: 21px;
+}
+
+/* Жилье, еда, сувениры	*/
+
+.reason-list-container {
+	min-height: 330px;
+
+	display: flex;
+
+	background-color: #ffffff;
+}
+
+.reason-list {
+	width: 33.3333333333%;
+
+	text-align: center;
+}
+
+.reason-list h2 {
+	font-size: 21px;
+	line-height: 21px;
+
+	margin-top: 32px;
+	margin-bottom: 25px;
+}
+
+.reason-list p {
+	font-size: 14px;
+	line-height: 21px;
+
+	margin: 0;
+}
+
+.icon1 {
+	padding-top: 60px;
+}
+
+.icon2 {
+	padding-top: 62px;
+}
+
+.icon3 {
+	padding-top: 56px;
+}
+
+/* Reason 2 (Там есть мост дьявола) */
+
+.reason2 {
+		display: flex;
+		justify-content: flex-end;
+
+	background-image: url("img/background3.png");
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+/* Причины 3, 4, 5 */
+
+.reason345 {
+	min-height: 256px;
+
+	display: flex;
+
+	text-align: center;
+
+	color: black;
+	background-color: #eeeeee;
+}
+
+.reason3 {
+	width: 33.3333333333%;
+}
+
+.reason4 {
+	width: 33.3333333333%;
+}
+
+.reason5 {
+	width: 33.3333333333%;
+}
+
+.reason345 h2 {
+	margin: 0;
+	margin-top: 45px;
+	margin-bottom: 28px;
+
+	font-size: 21px;
+	line-height: 21px;
+}
+
+.reason345 p {
+	margin: 0;
+	margin-bottom: 28px;
+
+	font-size: 14px;
+	line-height: 21px;
+}
+
+/* Заинтересовались? Контейнер */
+
+.search-container {
+	background-color: #ffffff;
+
+	min-height: 291px;
+
+	text-align: center;
+
+	padding-top: 55px;
+}
+
+.search-container h2 {
+	margin: 0;
+	margin-bottom: 30px;
+
+	font-size: 30px;
+	line-height: 36px;
+}
+
+.search-container p{
+	margin: 0;
+	margin-bottom: 40px;
+
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.search-container button {
+	background-color: #766357;
+	border: 0;
+
+	color: white;
+	font-family: inherit;
+	font-size: 21px;
+	line-height: 26px;
+	text-transform: inherit;
+
+	padding-top: 35px;
+	padding-bottom: 35px;
+	padding-left: 140px;
+	padding-right: 140px; 
+}
+
+.search-container button:hover {
+	background-color: #604e43;
+}
+
+.search-container button:active {
+	background-color: #503e33;
+	color: #cacaca;
+}
+
+/* Карта и форма, которая появляется при 
+нажатии на кнопку: Поиск гостиницы в Седоне*/
+
+.map {
+	min-height: 594px;
+
+	background-image: url("img/map.png");
+	background-size: cover;
+	background-position: center;
+
+	position: relative;
+}
+
+/* Форма */
+.form {
+	position: relative;
+
+	width: 572.79px;
+	height: 395px;
+
+	background-color: #ffffff;
+
+	padding-top: 55px;
+	display: none;
+
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 55px;
+	padding-right: 55px;
+
+	font-size: 14px;
+	font-weight: 700;
+
+	text-align: center;
+}
+
+.form-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin-bottom: 29px;
+}
+
+.last-div {
+	margin-bottom: 54px;
+}
+
+.form-container p {
+	margin: 0;
+}
+
+.form-container input {
+	height: 38px;
+	width: 345px;
+
+	border: 0;
+	background-color: #f2f2f2;
+	background-image: url("img/calendar.svg"); /* Эти 3 значения надо ниже вырубить*/
+	background-repeat: no-repeat;
+	background-position: 315px; 
+
+	font-family: inherit;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	padding-left: 14px;
+	padding-right: 35px;
+}
+
+.adult-child {
+	background-image: none; 
+
+	width: 115px !important;
+
+	text-align: center;
+
+	padding: 0 !important;
+}
+
+.form input::-webkit-input-placeholder {
+ color: black; 
+}
+
+.form input:focus::-webkit-input-placeholder {
+ color:transparent; 
+}
+
+.close {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.form button {
+	border: 0;
+
+	font-family: inherit;
+	font-size: 21px;
+	line-height: 26px;
+	text-transform: inherit;
+
+	color: white;
+	background-color: #81b3d2;
+
+	width: 458px; 
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.form button:hover {
+	background-color: #669ec0;
+}
+
+.form button:active {
+	background-color: #5496bd;
+	color: #94b9d2;
+}
+
+.form-container input:focus {
+	outline-color: #ebebeb;
+	background-color: white;	
+}
+
+.close:focus {
+	outline: none;
+}
+/* Подвал */
+
+.footer {
+	background-image: url("img/footer.png");
+
+	min-height: 120px;
+	
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.icon-container  {
+	display: flex;
+}
+
+.icon-container a {
+	background-color: #81b3d2;
+
+	display: flex;
+	justify-content: center;
+
+	width: 45px;
+	height: 45px;
+
+	margin-right: 5px;
+}
+
+.icon-container a:hover {
+	background-color: #669ec0;
+}
+
+.icon-container a:active {
+	background-color: #5496bd;
+}
+
+
+.footer p {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+}
+
+/* Адаптивность */
+
+/* Подвал сайта */
+
+@media (max-width: 560px) {
+	.footer {
+		flex-direction: column;
+	}
+
+	.footer .ovechka {
+		display: none;
+	}
+
+	.footer .icon-container {
+		margin-bottom: 10px;
+	}
+}
+
+/* Кнопка: Поиск гостиницы в Седоне; И форма */
+
+@media (max-width: 590px) {
+	.search-container button, .form button {
+	width: 100%;
+
+	padding-right: 0;
+	padding-left: 0;
+	}
+}
+
+@media (max-width: 590px) {
+	.form {
+	width: 100%;
+	height: 496.8px;
+	}
+
+	.form-container {
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 20px;
+		background-image: none;
+	}
+
+	.form-container input {
+		background-image: none;
+		text-align: center;
+		padding-right: 0;
+		padding-left: 0;	
+	}
+
+	.form-container p {
+		margin-bottom: 10px;
+	}
+
+	.adult-child {
+		margin-bottom: 20px;
+	}
+
+	.last-div input{
+		width: 345px !important;
+	}
+}
+
+@media (max-width: 468px) {
+	.form-container input {
+		width: 100%;
+	}
+
+	.last-div input{
+		width: 100% !important;
+	}
+}
+
+/* 3, 4, и 5 причины */
+
+@media (max-width: 883px) {
+	.reason345 {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.reason3,
+	.reason4,
+	.reason5 {
+		width: 288.8px;
+	}
+}
+
+/* Картинки убираем на причине 1 и причине 2 */
+@media (max-width: 617px) {
+	.reason-container {
+		flex-basis: 100%;
+	}
+}
+
+/* Жилье, еда, сувениры */
+
+@media (max-width: 883px) {
+	.reason-list-container {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+		.reason-list {
+		width: 288.8px;
+	}
+}
+
+/* Интро */
+
+@media (max-width: 446px) {
+	.intro {
+		background-image: url("img/back1.png");
+		padding-bottom: 10px
+	}
+
+	.intro br {
+		display: none;
+	}
+}
+
+/* Навигация */
+
+@media (max-width: 614px) {
+	.forMedia {
+		display: none;
+	}
+}
